@@ -1,0 +1,13 @@
+# Ignore all .pkl files
+*.pkl
+
+# EXCEPT this one model file — force include it
+!f1_model.pkl
+
+# Standard Python ignores
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.env
+.DS_Store
