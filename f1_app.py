@@ -4,7 +4,11 @@ import pickle
 import shap
 import matplotlib.pyplot as plt
 
-model = pickle.load(open("f1_model.pkl", "rb"))
+
+import os
+model_path = os.path.join(os.path.dirname(__file__), "f1_model.pkl")
+model = pickle.load(open(model_path, "rb"))
+
 
 st.set_page_config(page_title="F1 Predictor 🏁")
 st.title("🏎️ Formula 1 Win Probability Predictor")
